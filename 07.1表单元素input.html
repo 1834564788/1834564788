@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单元素（控件）</title>
+</head>
+<body>
+    <form action="DEMO.PHP" method="get" name="1">
+        <!-- text 文本框 用户可以在里面输入任何文字 -->
+        用户名：<input type="text" name="username"  value="请输入用户名" maxlength="4"/><br />
+        <!-- password 密码框 用户看不见输入的密码 -->
+        密码：<input type="password" name="pwd"/><br />
+        <!-- <input>是单标签 -->
+        <!-- 单选按钮和复选按钮可以设置checked属性，当页面打开的时候就可以默认选中这个按钮 -->
+        性别：<label for="1">男</label><input type="radio" name="1" checked="checked" id="1" /><label for="2">女</label><input type="radio" name="1" id="2"><br />
+        <!-- radio 单选按钮 可以实现多选一单选时name必须定义为相同的名称实现单选 -->
+        爱好： 玩游戏<input type="checkbox" name="aihao" value="玩游戏" checked="checked"> 睡觉<input type="checkbox" name="aihao" value="睡觉"checked="checked"> 吃饭<input type="checkbox" name="aihao" value="吃饭"> 蓝球<input type="checkbox" name="aihao"><br />
+        <!-- checkbox多选按钮 复选框 可以实现多选多 check（选择）box（盒子）name和单选一样用    一样的名称 -->
+    <!-- name="由用户自定义"定义input元素的名称  name是提交到后台时后台看见的名称 -->
+    <!-- value="由用户自定义"规定input元素的值 value是提交到后台时后台看见的数据 name和value是每个表单元素都应该有的值，主要是给后台人员使用 -->
+    <!-- checked=checked 规定input元素首次加载时应当被选中 -->
+    <!-- maxlength="正整数" 规定输入字段中的字符的最大长度 -->
+    <input type="submit" value="文本内容"><br />
+    <!-- sudmit是提交按钮 可以将表单域 form里面的表单元素里面的值提交给后台服务器 -->
+    <input type="reset" value="重置页面"><br />
+        <!-- reset可以重置页面的内容 回到页面的初始状态 -->
+    <!-- 点击了提交按钮 可以把表单域 form里面的表单元素里面的值提交给后台服务器 -->
+    <!-- 普通按钮button  后期结合js搭配使用 -->
+    <input type="button" value="获取验证码" /><br />
+    <!-- 文件域 使用场景上传文件 -->
+    上传图片： <input type="file">
+    </form>
+    <label for="nan">男</label>
+    <!-- <label>标签用于绑定应该表单元素，当点击<label>标签内的文本时，浏览器就会最大将焦点（光标）转到或者选择对应的表单元素上，用来增加用户体验 -->
+</body>
+</html>
