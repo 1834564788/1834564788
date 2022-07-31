@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器类选择器</title>
+    <!-- 语法<style>
+        .类名 {
+            属性1： 属性值1；
+            ...
+        }
+    </style> -->
+    <!-- 结构需要class属性来调用 -->
+    <!-- class 类的意思 -->
+    <!-- 千万不能使用纯数字和汉字来定义命名 -->
+    <!-- 需要class来定义类名  ，相当于自己起了一个名字（开发者自己命名）-->
+    <!-- 类选择口诀：样式点定义，结构类（class）调用，一个或多个，开发最常有 -->
+    <style>
+        .red {
+            color: red;
+        }
+        .greed{
+            color: green;
+        }
+        .blue {
+            width: 100px;
+            height: 100px;
+            /* 背景颜色 */
+            background-color: blue;
+        }
+        .green {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+        <!-- 类选择器可以单独选择一个或者某几个标签来进行差异化设置 -->
+    <ul>
+        <li class="red">1</li>
+        <li class="red">1</li>
+        <li class="greed">1</li>
+        <li>1</li>
+    </ul>
+    <a href="https://blog.csdn.net/zheng_14451/article/details/108213050" target="_blank">类选择器class起名规则</a>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+</body>
+</html>

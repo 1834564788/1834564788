@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css字体复合属性</title>
+    <style>
+        div {
+            /* font-style: italic;
+            font-weight: 700;
+            font-size: 20px;
+            font-family: 'microsoft yahei'; */
+            /* 复合属性；简写的方式 */
+            /* 顺序font: font-style font-weight font-size/line-height font-family顺序不能更改，没有的属性可以不写但是顺序不能改变 */
+            font: italic 700 20px "microsoft yahei"
+            /* 必须保留font-size（文字大小）和font-family（文字字体）属性，否则font属性将不起作用 */
+            
+        }
+    </style>
+</head>
+<body>
+    <div>css字体复合属性</div>
+</body>
+</html>
