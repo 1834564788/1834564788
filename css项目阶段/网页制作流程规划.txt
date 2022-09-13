@@ -1,0 +1,9 @@
+创建所需的文件夹
+创建html文件和初始化css文件
+相同样式的标签，可以使用common.css公共样式来设置
+导入网页标签显示的ico图片文件
+title标签建议写网站名-网站介绍
+description说明网站是干什么的
+例如<meta name="descrtion" content="网站介绍">
+keyword 关键字 是搜索引擎的关注点之一 关键词之间必须要英文的逗号隔开
+例如 <meta name="keyword" content="关键词">
